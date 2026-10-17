@@ -1,0 +1,937 @@
+<title>TraceLot &amp; BioStock</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="De la cabosse au kilowatt : traçabilité et sécurisation de la chaîne d'approvisionnement en biomasse. Cas d'application : centrale ECOR de Divo. Projet académique de YRIGALE Kouyo Saint Michel.">
+<meta name="theme-color" content="#07121F">
+<link rel="icon" type="image/png" href="img/tlbs-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap">
+<!--@CSS-->
+<!--@BODY-->
+<a href="#probleme" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[70] focus:bg-emerald focus:text-night focus:px-4 focus:py-2 focus:rounded-lg">Aller au contenu</a>
+
+<!-- ============ EN-TÊTE ============ -->
+<header class="site-header" id="top">
+  <div class="wrap h-full flex items-center justify-between gap-6">
+    <a href="#accueil" class="flex items-center gap-3 shrink-0" aria-label="TraceLot &amp; BioStock, retour en haut">
+      <img src="img/tlbs-mark.png" alt="" width="34" height="34" class="w-[34px] h-[34px]">
+      <span class="font-display font-extrabold text-[17px] tracking-tight">TraceLot <span class="text-mist font-semibold">&amp;</span> <span class="text-emerald">BioStock</span></span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-7" aria-label="Navigation principale">
+      <a class="nav-link" href="#probleme">Problème</a>
+      <a class="nav-link" href="#solution">Solution</a>
+      <a class="nav-link" href="#parcours">Parcours</a>
+      <a class="nav-link" href="#postes">Postes</a>
+      <a class="nav-link" href="#detection">Détection</a>
+      <a class="nav-link" href="#hors-ligne">Hors-ligne</a>
+      <a class="nav-link" href="#feuille-de-route">Feuille de route</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="#contact" class="btn btn-primary hidden sm:inline-flex !min-h-[40px] !px-4 !text-[14px]">Demander une démo</a>
+      <button type="button" id="menu-toggle" class="lg:hidden w-11 h-11 grid place-items-center rounded-lg border border-rim" aria-expanded="false" aria-controls="mobile-nav" aria-label="Ouvrir le menu">
+        <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav id="mobile-nav" class="mobile-nav lg:hidden" hidden aria-label="Navigation mobile">
+    <div class="wrap py-4 grid grid-cols-2 gap-x-6 gap-y-3 text-[15px]">
+      <a class="nav-link" href="#probleme">Problème</a>
+      <a class="nav-link" href="#solution">Solution</a>
+      <a class="nav-link" href="#parcours">Parcours d'un lot</a>
+      <a class="nav-link" href="#postes">Postes</a>
+      <a class="nav-link" href="#detection">Détection</a>
+      <a class="nav-link" href="#hors-ligne">Hors-ligne</a>
+      <a class="nav-link" href="#securite">Sécurité</a>
+      <a class="nav-link" href="#feuille-de-route">Feuille de route</a>
+      <a class="btn btn-primary col-span-2 mt-2" href="#contact">Demander une démonstration</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero" id="accueil" aria-labelledby="hero-title">
+  <div class="hero-canvas" id="hero-scene" aria-hidden="true"></div>
+  <div class="hero-shade"></div>
+  <div class="wrap relative pt-[clamp(56px,9vw,120px)] pb-[clamp(48px,6vw,80px)] lg:min-h-[760px] flex flex-col justify-between gap-14">
+    <div class="max-w-[660px]">
+      <p class="tag" data-hero>Cas d'application · Centrale ECOR de Divo, Côte d'Ivoire</p>
+      <h1 id="hero-title" class="h-hero mt-7" data-hero>De la cabosse<br>au <span class="accent-word">kilowatt.</span></h1>
+      <p class="lead mt-7 !text-[#B9C6D3]" data-hero>Une solution complète de traçabilité et de sécurisation de la chaîne d'approvisionnement en biomasse, conçue pour les centrales de valorisation énergétique des résidus agricoles. Chaque sac de cabosses est suivi du village jusqu'à la chaudière.</p>
+      <p class="mt-6 font-display font-bold text-[18px] text-cloud flex items-center gap-3" data-hero>
+        <span class="inline-block w-8 h-[2px] bg-laterite"></span>On ne paie que la matière sèche réelle.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-3" data-hero>
+        <a href="#parcours" class="btn btn-primary">Suivre un lot
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+        <a href="#contact" class="btn btn-ghost">Demander une démonstration</a>
+      </div>
+    </div>
+
+    <div class="grid lg:grid-cols-12 gap-8 items-end">
+      <dl class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8 border-t border-white/10 pt-6" data-hero>
+        <div class="min-w-0 flex items-baseline gap-3 sm:block">
+          <dt class="sr-only">Puissance installée</dt>
+          <dd class="stat-num"><span data-count="76">76</span><span class="stat-unit">MW</span></dd>
+          <dd class="text-[14px] text-mist sm:mt-2">de puissance installée</dd>
+        </div>
+        <div class="min-w-0 flex items-baseline gap-3 sm:block">
+          <dt class="sr-only">Biomasse requise</dt>
+          <dd class="stat-num"><span data-count="600000">600&nbsp;000</span><span class="stat-unit">t</span></dd>
+          <dd class="text-[14px] text-mist sm:mt-2">de biomasse par an</dd>
+        </div>
+        <div class="min-w-0 flex items-baseline gap-3 sm:block">
+          <dt class="sr-only">Producteurs concernés</dt>
+          <dd class="stat-num"><span class="text-mist font-semibold">~</span><span data-count="36000">36&nbsp;000</span></dd>
+          <dd class="text-[14px] text-mist sm:mt-2">producteurs concernés</dd>
+        </div>
+        <dd class="sm:col-span-3 text-[12.5px] text-[#7F92A6] leading-relaxed">Échelle du cas d'application : la centrale ECOR de Divo (projet SODEN, région du Lôh-Djiboua) convertira les cabosses de cacao en électricité. Projet industriel financé à hauteur de 3&nbsp;M$ (CFM) et 500&nbsp;k€ (DFCD).</dd>
+      </dl>
+
+      <aside class="lg:col-span-4 lg:col-start-9 lot-hud p-5 w-full max-w-[360px] lg:justify-self-end" data-hero aria-label="Exemple de lot suivi">
+        <div class="flex items-center justify-between gap-3">
+          <span class="mono text-[12px] text-mist">LOT-2026-000184</span>
+          <span class="pill pill-info" id="hero-status">En transit</span>
+        </div>
+        <dl class="mt-4 grid gap-2 text-[13px]">
+          <div class="flex justify-between gap-4"><dt class="text-mist">Départ</dt><dd class="font-semibold">Zégo · 31 sacs</dd></div>
+          <div class="flex justify-between gap-4"><dt class="text-mist">Destination</dt><dd class="font-semibold">Pont-bascule, Divo</dd></div>
+          <div class="flex justify-between gap-4"><dt class="text-mist">Position</dt><dd class="mono num text-[12px]" id="hero-gps">5,812° N · 5,301° O</dd></div>
+          <div class="flex justify-between gap-4"><dt class="text-mist">Données</dt><dd class="font-semibold text-emerald flex items-center gap-1.5">
+            <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Scellées</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PREUVES ============ -->
+<section class="band-deep border-y border-rim" aria-label="Points clés">
+  <div class="wrap py-8 grid grid-cols-2 lg:grid-cols-5 gap-x-6 gap-y-7 text-[14px]">
+    <div class="proof-item" data-stagger><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2l20 20M8.5 16.5a5 5 0 0 1 7 0M5 12.9a10 10 0 0 1 5.2-2.8M12 20h.01M16.8 11.5A10 10 0 0 1 19 12.9M1.5 8.8A15 15 0 0 1 5.6 6.3M10.7 5.1A15 15 0 0 1 22.5 8.8"/></svg>
+      <p><b class="font-display text-cloud block">Hors-ligne d'abord</b><span class="text-mist">15 pesées en mode avion, synchronisées sans perte ni doublon</span></p></div>
+    <div class="proof-item" data-stagger><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4zM4 9h16M9 9v11"/></svg>
+      <p><b class="font-display text-cloud block">Audit immuable</b><span class="text-mist">L'historique refuse toute réécriture</span></p></div>
+    <div class="proof-item" data-stagger><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+      <p><b class="font-display text-cloud block">Empreinte SHA-256</b><span class="text-mist">Première étape vers l'ancrage Hedera</span></p></div>
+    <div class="proof-item" data-stagger><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5a6.5 6.5 0 0 1 3.5 5.5"/></svg>
+      <p><b class="font-display text-cloud block">36&nbsp;000 producteurs</b><span class="text-mist">Référentiel dimensionné pour toute la filière</span></p></div>
+    <div class="proof-item col-span-2 lg:col-span-1" data-stagger><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>
+      <p><b class="font-display text-cloud block">~100 lots par jour</b><span class="text-mist">Pics de 200 opérations de synchronisation</span></p></div>
+  </div>
+</section>
+
+<!-- ============ PROBLÈME ============ -->
+<section class="band" id="probleme" aria-labelledby="probleme-title">
+  <div class="wrap">
+    <div class="grid lg:grid-cols-12 gap-8 items-end">
+      <div class="lg:col-span-8">
+        <p class="tag" data-reveal>Le problème</p>
+        <h2 id="probleme-title" class="h-sec mt-6" data-reveal>Entre le village et la chaudière, un sac de cabosses change plusieurs fois de mains.</h2>
+      </div>
+      <p class="lead lg:col-span-4" data-reveal>Il parcourt des dizaines de kilomètres de piste. À chaque étape, la mesure peut dériver, par fraude ou par erreur.</p>
+    </div>
+
+    <div class="mt-14 grid md:grid-cols-3 gap-5">
+      <article class="risk-card" data-stagger>
+        <div class="risk-art" aria-hidden="true">
+          <svg viewBox="0 0 180 130" id="art-water">
+            <ellipse cx="90" cy="118" rx="52" ry="7" fill="#07121F" opacity=".6"/>
+            <path d="M52 50c0-10 12-14 38-14s38 4 38 14l6 56c0 9-20 13-44 13s-44-4-44-13z" fill="#A27B4C"/>
+            <path d="M52 50c0-10 12-14 38-14s38 4 38 14" fill="none" stroke="#7A5733" stroke-width="3"/>
+            <path d="M64 70h52M60 88h60" stroke="#8C6A40" stroke-width="2" stroke-dasharray="3 5"/>
+            <rect x="80" y="74" width="20" height="16" rx="2" fill="#F5F7FA"/><rect x="84" y="78" width="12" height="8" fill="#0F1E2E"/>
+            <g class="drops" fill="#3B82F6">
+              <path class="drop" d="M70 0c-5 8-8 12-8 16a8 8 0 0 0 16 0c0-4-3-8-8-16z"/>
+              <path class="drop" d="M96 -10c-4 6-6 10-6 13a6 6 0 0 0 12 0c0-3-2-7-6-13z"/>
+              <path class="drop" d="M116 4c-4 6-6 10-6 13a6 6 0 0 0 12 0c0-3-2-7-6-13z"/>
+            </g>
+          </svg>
+        </div>
+        <p class="mono text-[11px] tracking-[.14em] uppercase text-[#F0A27F]">Dérive 1</p>
+        <h3 class="h-card mt-2">Le mouillage frauduleux</h3>
+        <p class="mt-3 text-mist text-[15px]">De l'eau est ajoutée aux sacs pendant le transport pour gonfler le poids et être payé davantage.</p>
+      </article>
+
+      <article class="risk-card" data-stagger>
+        <div class="risk-art" aria-hidden="true">
+          <svg viewBox="0 0 180 130" id="art-theft">
+            <ellipse cx="90" cy="112" rx="78" ry="7" fill="#07121F" opacity=".6"/>
+            <g fill="#A27B4C" stroke="#7A5733" stroke-width="2">
+              <path d="M14 62c0-6 7-8 18-8s18 2 18 8l3 44c0 5-9 7-21 7s-21-2-21-7z"/>
+              <path d="M58 62c0-6 7-8 18-8s18 2 18 8l3 44c0 5-9 7-21 7s-21-2-21-7z"/>
+              <path class="gone" d="M102 62c0-6 7-8 18-8s18 2 18 8l3 44c0 5-9 7-21 7s-21-2-21-7z"/>
+              <path d="M146 62c0-6 7-8 18-8s18 2 18 8l3 44c0 5-9 7-21 7s-21-2-21-7z" transform="translate(-6 0)"/>
+            </g>
+            <path class="ghost" d="M102 62c0-6 7-8 18-8s18 2 18 8l3 44c0 5-9 7-21 7s-21-2-21-7z" fill="none" stroke="#C8643B" stroke-width="2" stroke-dasharray="5 4" opacity="0"/>
+            <text class="ghost" x="120" y="40" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#F0A27F" opacity="0">?</text>
+          </svg>
+        </div>
+        <p class="mono text-[11px] tracking-[.14em] uppercase text-[#F0A27F]">Dérive 2</p>
+        <h3 class="h-card mt-2">Le vol de matière première</h3>
+        <p class="mt-3 text-mist text-[15px]">Des sacs disparaissent entre le chargement au village et l'arrivée à l'usine, sans laisser de trace.</p>
+      </article>
+
+      <article class="risk-card" data-stagger>
+        <div class="risk-art" aria-hidden="true">
+          <svg viewBox="0 0 180 130" id="art-scale">
+            <ellipse cx="90" cy="120" rx="60" ry="6" fill="#07121F" opacity=".6"/>
+            <path d="M80 118h20l-4-78h-12z" fill="#33485E"/>
+            <circle cx="90" cy="36" r="6" fill="#93A4B5"/>
+            <g class="beam" style="transform-origin:90px 36px">
+              <rect x="22" y="33" width="136" height="6" rx="3" fill="#93A4B5"/>
+              <path d="M30 39l-14 30h28z" fill="none" stroke="#93A4B5" stroke-width="2"/>
+              <path d="M150 39l-14 30h28z" fill="none" stroke="#93A4B5" stroke-width="2"/>
+              <path d="M14 69h32a16 8 0 0 1-32 0z" fill="#A27B4C"/>
+              <path d="M134 69h32a16 8 0 0 1-32 0z" fill="#A27B4C"/>
+            </g>
+            <text x="90" y="16" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#FBBF24">± ? kg</text>
+          </svg>
+        </div>
+        <p class="mono text-[11px] tracking-[.14em] uppercase text-[#F0A27F]">Dérive 3</p>
+        <h3 class="h-card mt-2">Les erreurs de mesure</h3>
+        <p class="mt-3 text-mist text-[15px]">Balances mal calibrées, saisies approximatives, chiffres recopiés à la main d'un carnet à l'autre.</p>
+      </article>
+    </div>
+
+    <div class="mt-16 grid lg:grid-cols-12 gap-8 border-t border-rim pt-12">
+      <p class="lg:col-span-3 mono text-[12px] tracking-[.14em] uppercase text-mist" data-reveal>Sans traçabilité</p>
+      <div class="lg:col-span-9 grid gap-4">
+        <p class="consequence" data-stagger>La centrale paie de l'eau.</p>
+        <p class="consequence text-[#B9C6D3]" data-stagger>La chaudière reçoit un combustible de qualité variable.</p>
+        <p class="consequence text-[#7F92A6]" data-stagger>Et personne ne peut prouver où ça a dérapé.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOLUTION ============ -->
+<section class="band band-light" id="solution" aria-labelledby="solution-title">
+  <div class="wrap">
+    <div class="max-w-[760px]">
+      <p class="tag" data-reveal>La solution</p>
+      <h2 id="solution-title" class="h-sec mt-6" data-reveal>Deux applications, un seul moteur de comparaison.</h2>
+      <p class="lead mt-6" data-reveal>TraceLot capture la preuve sur le terrain. BioStock la confronte à ce qui arrive à l'usine. Les deux parlent au même serveur, qui seul rend le verdict officiel.</p>
+    </div>
+
+    <div class="mt-14 grid lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] gap-6">
+      <!-- TraceLot -->
+      <article class="app-panel" data-reveal>
+        <div class="relative z-[1] flex flex-col h-full">
+          <div class="flex items-center gap-4">
+            <img src="img/tracelot-mark.png" alt="" class="h-10 w-auto">
+            <div>
+              <img src="img/tracelot-word.png" alt="TraceLot" class="h-[22px] w-auto">
+              <p class="text-[13px] text-mist mt-1">Application mobile terrain · Android</p>
+            </div>
+          </div>
+          <p class="mt-6 text-[16px] text-[#C9D5E1] max-w-[42ch]">Capture la preuve à chaque étape : producteur, tag du lot, pesée, humidité, position GPS et photo. Même sans réseau.</p>
+
+          <div class="phone-stage mt-8 mb-2">
+            <div class="phone" id="phone">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="flex items-center justify-between px-5 pt-3 pb-2 text-[10px] text-[#9FB0C2]">
+                  <span class="mono">09:41</span>
+                  <span class="flex items-center gap-1.5 text-[#FBBF24]"><span class="w-1.5 h-1.5 rounded-full bg-[#F59E0B]"></span>Hors réseau</span>
+                </div>
+                <div class="px-4 pb-3 flex items-center justify-between">
+                  <b class="font-display text-[15px]">Nouveau lot</b>
+                  <span class="mono text-[9.5px] text-[#7F92A6]">Agent K. Yao</span>
+                </div>
+                <div class="px-3 grid gap-1.5" id="phone-fields">
+                  <div class="tl-field"><span class="k">Producteur</span><span class="v flex items-center gap-1.5">Kouamé A. <svg class="tl-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span></div>
+                  <div class="tl-field"><span class="k">Tag du lot</span><span class="v mono flex items-center gap-1.5">TG-0418-7731 <svg class="tl-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span></div>
+                  <div class="grid grid-cols-2 gap-1.5">
+                    <div class="tl-field"><span class="k">Village</span><span class="v">Zégo</span></div>
+                    <div class="tl-field"><span class="k">Sacs</span><span class="v num">31</span></div>
+                    <div class="tl-field"><span class="k">Poids</span><span class="v num">2&nbsp;480 kg</span></div>
+                    <div class="tl-field"><span class="k">Humidité</span><span class="v num">18 %</span></div>
+                  </div>
+                  <div class="tl-field"><span class="k">GPS</span><span class="v mono text-[10px]">5,812° N · 5,301° O <span class="text-emerald">±4 m</span></span></div>
+                  <div class="grid grid-cols-[1fr_auto] gap-1.5">
+                    <div class="tl-field"><span class="k">Pesé sur place</span><span class="v">Oui</span></div>
+                    <div class="tl-field !px-3" aria-label="Photo prise"><svg viewBox="0 0 24 24" class="w-4 h-4 text-emerald" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg></div>
+                  </div>
+                  <div class="mt-1.5 rounded-[10px] bg-emerald text-[#052014] text-center font-display font-bold text-[12.5px] py-2.5">Enregistrer le lot</div>
+                  <p class="text-center text-[9.5px] text-[#7F92A6] py-2.5"><span class="text-[#FBBF24]" id="phone-queue">3</span> opérations en attente de synchronisation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <ul class="mt-auto pt-6 grid gap-2 text-[14px] text-[#C9D5E1]">
+            <li class="flex gap-2.5"><span class="text-emerald">—</span>Un tag pré-numéroté ne sert qu'une seule fois</li>
+            <li class="flex gap-2.5"><span class="text-emerald">—</span>Chaque saisie est enregistrée sur le téléphone, instantanément</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- BioStock -->
+      <article class="app-panel" data-reveal>
+        <div class="relative z-[1] flex flex-col h-full">
+          <div class="flex items-center gap-4">
+            <img src="img/biostock-mark.png" alt="" class="h-11 w-auto">
+            <div>
+              <img src="img/biostock-word.png" alt="BioStock" class="h-[22px] w-auto">
+              <p class="text-[13px] text-mist mt-1">Plateforme web de supervision · usine</p>
+            </div>
+          </div>
+          <p class="mt-6 text-[16px] text-[#C9D5E1] max-w-[52ch]">Compare le départ et l'arrivée de chaque lot, signale les anomalies et affiche le stock en temps réel. Le tableau de bord se met à jour toutes les 20 secondes environ.</p>
+
+          <div class="fit-box mt-8 rounded-[14px]" data-fit="760" id="dash-solution">
+            <div class="browser">
+              <div class="browser-bar"><i></i><i></i><i></i><div class="browser-url">biostock · tableau de bord</div></div>
+              <div class="flex">
+                <div class="bs-side">
+                  <div class="flex items-center gap-2 px-2 pb-3 mb-1 border-b border-white/10"><img src="img/biostock-mark.png" alt="" class="h-6 w-auto"><b class="font-display text-white text-[12px]">BioStock</b></div>
+                  <span class="on"><b></b>Tableau de bord</span><span><b></b>Réconciliation</span><span><b></b>Quarantaine</span><span><b></b>Agents</span><span><b></b>Producteurs</span><span><b></b>Coopératives</span><span><b></b>Export ESG</span><span><b></b>Registre d'audit</span>
+                </div>
+                <div class="flex-1 p-3.5 grid gap-2.5 min-w-0">
+                  <div class="flex items-center justify-between">
+                    <b class="font-display text-[14px]">Tableau de bord</b>
+                    <span class="text-[10px] text-slate flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald"></span>Actualisé il y a <span class="num" data-tick>12</span> s</span>
+                  </div>
+                  <div class="grid grid-cols-4 gap-2">
+                    <div class="bs-card"><div class="k">Lots reçus</div><div class="v"><span data-count="1284">1&nbsp;284</span></div></div>
+                    <div class="bs-card"><div class="k">Tonnage total</div><div class="v"><span data-count="3116">3&nbsp;116</span> <span class="text-[11px] text-slate">t</span></div></div>
+                    <div class="bs-card"><div class="k">Matière sèche</div><div class="v"><span data-count="2541">2&nbsp;541</span> <span class="text-[11px] text-slate">t</span></div></div>
+                    <div class="bs-card"><div class="k">Alertes actives</div><div class="v text-[#B91C1C]"><span data-count="7">7</span></div></div>
+                  </div>
+                  <div class="grid grid-cols-[1.6fr_1fr] gap-2">
+                    <div class="bs-card">
+                      <div class="flex justify-between items-baseline"><div class="k">Réceptions · 7 jours</div><div class="text-[9.5px] text-slate">lots / jour</div></div>
+                      <svg viewBox="0 0 300 110" class="w-full h-[110px] mt-1" aria-label="Courbe des réceptions sur 7 jours">
+                        <g stroke="#E2E8F0" stroke-width="1"><path d="M0 20h300M0 50h300M0 80h300"/></g>
+                        <path class="chart-area" d="M0 72 L50 60 L100 66 L150 44 L200 50 L250 30 L300 36 L300 100 L0 100Z" fill="rgba(16,185,129,.12)"/>
+                        <path class="chart-line" d="M0 72 L50 60 L100 66 L150 44 L200 50 L250 30 L300 36" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+                        <circle cx="300" cy="36" r="4" fill="#10B981" stroke="#fff" stroke-width="2" transform="translate(-4 0)"/>
+                        <g font-size="9" fill="#64748B" font-family="Inter, sans-serif"><text x="0" y="110">lun.</text><text x="138" y="110">jeu.</text><text x="272" y="110">dim.</text></g>
+                      </svg>
+                    </div>
+                    <div class="bs-card">
+                      <div class="k">Verdicts</div>
+                      <div class="flex items-center gap-3 mt-2">
+                        <svg viewBox="0 0 42 42" class="w-[84px] h-[84px] -rotate-90" aria-label="Répartition des verdicts">
+                          <circle cx="21" cy="21" r="15.9" fill="none" stroke="#E2E8F0" stroke-width="6"/>
+                          <circle class="donut" cx="21" cy="21" r="15.9" fill="none" stroke="#10B981" stroke-width="6" stroke-dasharray="82 18" stroke-dashoffset="0"/>
+                          <circle class="donut" cx="21" cy="21" r="15.9" fill="none" stroke="#F59E0B" stroke-width="6" stroke-dasharray="11 89" stroke-dashoffset="-82"/>
+                          <circle class="donut" cx="21" cy="21" r="15.9" fill="none" stroke="#DC2626" stroke-width="6" stroke-dasharray="7 93" stroke-dashoffset="-93"/>
+                        </svg>
+                        <ul class="text-[9.5px] grid gap-1 text-slate">
+                          <li class="flex items-center gap-1.5"><i class="w-2 h-2 rounded-sm bg-emerald"></i>Conformes 82 %</li>
+                          <li class="flex items-center gap-1.5"><i class="w-2 h-2 rounded-sm bg-amber"></i>Orange 11 %</li>
+                          <li class="flex items-center gap-1.5"><i class="w-2 h-2 rounded-sm bg-danger"></i>Rouges 7 %</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bs-card !p-0 overflow-hidden">
+                    <div class="k px-3 pt-2.5 pb-1.5">Dernières alertes</div>
+                    <div class="text-[10.5px]">
+                      <div class="grid grid-cols-[1.2fr_1fr_.8fr_1fr] gap-2 px-3 py-1.5 border-t border-[#EEF2F6] items-center"><span class="mono">LOT-2026-000171</span><span>Hiré</span><span class="text-slate">il y a 6 min</span><span class="justify-self-end font-semibold text-[#B45309] mono text-[9.5px]">ALERTE_HUMIDITE</span></div>
+                      <div class="grid grid-cols-[1.2fr_1fr_.8fr_1fr] gap-2 px-3 py-1.5 border-t border-[#EEF2F6] items-center"><span class="mono">LOT-2026-000166</span><span>Didoko</span><span class="text-slate">il y a 24 min</span><span class="justify-self-end font-semibold text-[#B91C1C] mono text-[9.5px]">ALERTE_MASSE</span></div>
+                      <div class="grid grid-cols-[1.2fr_1fr_.8fr_1fr] gap-2 px-3 py-1.5 border-t border-[#EEF2F6] items-center"><span class="mono">LOT-2026-000158</span><span>Guitry</span><span class="text-slate">il y a 1 h</span><span class="justify-self-end"><span class="rounded px-1.5 py-0.5 bg-[#FEF3C7] text-[#92400E] font-bold text-[9px] tracking-wide">QUARANTAINE</span></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="mt-4 text-[12px] text-[#7F92A6]">Maquette de l'interface, données d'exemple.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="mt-6 grid md:grid-cols-2 gap-6">
+      <blockquote class="rounded-[20px] border border-[#D6DEE7] p-7 flex gap-5 items-start" data-stagger>
+        <span class="mono text-[12px] tracking-[.14em] uppercase text-forest pt-1.5 shrink-0">Principe 1</span>
+        <p class="font-display font-extrabold text-[clamp(22px,2.4vw,28px)] leading-tight tracking-tight">On ne paie que la matière sèche réelle.</p>
+      </blockquote>
+      <blockquote class="rounded-[20px] border border-[#D6DEE7] p-7 flex gap-5 items-start" data-stagger>
+        <span class="mono text-[12px] tracking-[.14em] uppercase text-forest pt-1.5 shrink-0">Principe 2</span>
+        <p class="font-display font-extrabold text-[clamp(22px,2.4vw,28px)] leading-tight tracking-tight">Le système signale, l'humain décide.</p>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARCOURS ============ -->
+<section class="journey band-deep" id="parcours" aria-labelledby="parcours-title">
+  <div class="wrap pt-[clamp(72px,10vw,128px)] pb-12">
+    <div class="grid lg:grid-cols-12 gap-8 items-end">
+      <div class="lg:col-span-7">
+        <p class="tag" data-reveal>Le parcours d'un lot</p>
+        <h2 id="parcours-title" class="h-sec mt-6" data-reveal>Suivez un sac de cabosses, du village au pont-bascule.</h2>
+      </div>
+      <p class="lead lg:col-span-5" data-reveal>Faites défiler la page : le camion avance et le statut du lot change en direct. Chaque statut suit une chaîne stricte, qu'aucune étape ne peut sauter.</p>
+    </div>
+    <div class="mt-10 status-chain" data-reveal aria-label="Chaîne des statuts d'un lot">
+      <span class="pill pill-neutral">Enregistré</span><span class="arrow">→</span>
+      <span class="pill pill-neutral">Réservé</span><span class="arrow">→</span>
+      <span class="pill pill-info">En transit</span><span class="arrow">→</span>
+      <span class="pill pill-info">Arrivé</span><span class="arrow">→</span>
+      <span class="pill pill-ok">Reçu validé</span><span class="arrow">→</span>
+      <span class="pill pill-neutral">Clôturé</span>
+      <span class="text-[13px] text-mist ml-1">· ou, si suspect :</span>
+      <span class="pill pill-warn">Quarantaine</span><span class="text-[13px] text-mist">puis décision du superviseur · annulation possible</span>
+    </div>
+  </div>
+
+  <div class="journey-stage" id="journey-stage">
+    <div class="journey-canvas" id="journey-scene" aria-hidden="true"></div>
+    <div class="journey-ui">
+      <div class="wrap flex flex-col justify-between gap-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="lot-hud px-4 py-3 pointer-events-auto flex items-center gap-4 flex-wrap">
+            <span class="mono text-[12px] text-mist" id="journey-ref">LOT-2026-000184</span>
+            <span class="pill pill-neutral" id="journey-status">Enregistré</span>
+            <span class="text-[13px] text-[#B9C6D3] hidden sm:inline" id="journey-loc">Village de Zégo</span>
+          </div>
+          <div class="lot-hud px-4 py-3 hidden md:block pointer-events-auto">
+            <p class="mono text-[10.5px] tracking-[.12em] uppercase text-mist">Mission MSN-0412 · camion AB-4471-CI</p>
+            <div class="flex items-center gap-1.5 mt-2 text-[11px] font-semibold" id="mission-chain">
+              <span data-m="0">Réservée</span><span class="text-mist">›</span><span data-m="1">Chargée</span><span class="text-mist">›</span><span data-m="2">En transit</span><span class="text-mist">›</span><span data-m="3">Arrivée</span><span class="text-mist">›</span><span data-m="4">Clôturée</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-panel">
+          <div class="rail" id="journey-rail" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <ol class="journey-steps mt-5" id="journey-steps">
+            <li data-status="Enregistré" data-pill="neutral" data-loc="Village de Zégo">
+              <p class="step-kicker">1 · Village</p>
+              <h3 class="h-card mt-2">Le lot naît sur le terrain</h3>
+              <p class="mt-2 text-[15px] text-[#B9C6D3]">L'agent de collecte appose le tag pré-numéroté, scanne la carte du producteur, pèse, mesure l'humidité et géolocalise le lot. Le serveur lui attribue sa référence officielle.</p>
+              <p class="mt-3 mono text-[12px] text-emerald">→ ENREGISTRÉ · LOT-2026-000184</p>
+            </li>
+            <li data-status="En transit" data-pill="info" data-loc="Zone de chargement, Zégo">
+              <p class="step-kicker">2 · Chargement</p>
+              <h3 class="h-card mt-2">Chaque sac est scanné en montant</h3>
+              <p class="mt-2 text-[15px] text-[#B9C6D3]">Le logisticien crée la mission (chauffeur, plaque, capacité) et scanne les sacs un par un. Un sac déjà vu dans un autre lot est refusé, un excédent doit être validé.</p>
+              <p class="mt-3 mono text-[12px] text-emerald">→ RÉSERVÉ, puis EN TRANSIT au départ</p>
+            </li>
+            <li data-status="En transit" data-pill="info" data-loc="Piste vers Divo">
+              <p class="step-kicker">3 · Route</p>
+              <h3 class="h-card mt-2">Les données sont déjà scellées</h3>
+              <p class="mt-2 text-[15px] text-[#B9C6D3]">Le camion traverse la brousse. Poids, humidité et liste des sacs ont été enregistrés au départ : rien ne peut être modifié en chemin.</p>
+              <p class="mt-3 mono text-[12px] text-emerald">→ EN TRANSIT · données verrouillées</p>
+            </li>
+            <li data-status="Arrivé" data-pill="info" data-loc="Pont-bascule, Divo">
+              <p class="step-kicker">4 · Pont-bascule de Divo</p>
+              <h3 class="h-card mt-2">Une nouvelle pesée, indépendante</h3>
+              <p class="mt-2 text-[15px] text-[#B9C6D3]">L'agent de réception scanne le tag et refait la mesure : poids, humidité, nombre de sacs reçus, photo de réception.</p>
+              <p class="mt-3 mono text-[12px] text-emerald">→ ARRIVÉ</p>
+            </li>
+            <li data-status="Arrivé" data-pill="info" data-loc="Serveur central">
+              <p class="step-kicker">5 · Serveur</p>
+              <h3 class="h-card mt-2">Départ et arrivée sont comparés</h3>
+              <p class="mt-2 text-[15px] text-[#B9C6D3]">Le serveur confronte les deux mesures sur la matière sèche et calcule le verdict officiel. Le téléphone n'affiche qu'un aperçu : il n'a jamais le dernier mot.</p>
+              <p class="mt-3 mono text-[12px] text-[#93C5FD]">→ verdict en cours de calcul</p>
+            </li>
+            <li data-status="Reçu validé" data-pill="ok" data-loc="Stock cabosses, Divo">
+              <p class="step-kicker">6 · Verdict</p>
+              <h3 class="h-card mt-2">Conforme : le lot entre en stock</h3>
+              <p class="mt-2 text-[15px] text-[#B9C6D3]">Son empreinte cryptographique est posée automatiquement. Un lot suspect part en quarantaine : le superviseur tranche, puis le lot est clôturé.</p>
+              <p class="mt-3 mono text-[12px] text-emerald">→ REÇU VALIDÉ · empreinte SHA-256 posée</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POSTES ============ -->
+<section class="band band-light" id="postes" aria-labelledby="postes-title">
+  <div class="wrap">
+    <div class="grid lg:grid-cols-12 gap-8 items-end">
+      <div class="lg:col-span-7">
+        <p class="tag" data-reveal>Les postes</p>
+        <h2 id="postes-title" class="h-sec mt-6" data-reveal>Cinq postes, et des droits précis pour chacun.</h2>
+      </div>
+      <p class="lead lg:col-span-5" data-reveal>Les postes suivent l'ordre de la chaîne, du village à la direction. Chacun ne voit et ne modifie que ce qui relève de son rôle.</p>
+    </div>
+
+    <div class="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <article class="role-card" data-stagger>
+        <div class="flex items-start justify-between gap-3">
+          <div class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div>
+          <span class="app-badge">TraceLot</span>
+        </div>
+        <div>
+          <p class="mono text-[11px] tracking-[.14em] uppercase text-slate">Poste 1 · Villages</p>
+          <h3 class="h-card mt-1.5">Agent de collecte</h3>
+        </div>
+        <ul class="role-list">
+          <li>Scanne la carte QR du producteur, ou le crée provisoirement</li>
+          <li>Appose et scanne le tag pré-numéroté du lot, utilisable une seule fois</li>
+          <li>Saisit village, coopérative, poids brut, humidité et nombre de sacs</li>
+          <li>Scanne les sacs de contrôle, prend la position GPS et une photo</li>
+          <li>Indique si le lot est pesé sur place ou à peser à la réception</li>
+        </ul>
+      </article>
+
+      <article class="role-card" data-stagger>
+        <div class="flex items-start justify-between gap-3">
+          <div class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h12v10H2zM14 9h4l4 4v3h-8"/><circle cx="6" cy="17.5" r="2"/><circle cx="17.5" cy="17.5" r="2"/></svg></div>
+          <span class="app-badge">TraceLot</span>
+        </div>
+        <div>
+          <p class="mono text-[11px] tracking-[.14em] uppercase text-slate">Poste 2 · Transport</p>
+          <h3 class="h-card mt-1.5">Agent logistique</h3>
+        </div>
+        <ul class="role-list">
+          <li>Consulte les lots disponibles créés par tous les collecteurs</li>
+          <li>Crée la mission : chauffeur, plaque du camion, capacité</li>
+          <li>Scanne les sacs au chargement, avec compteur déclaré / scanné</li>
+          <li>Fait valider explicitement tout excédent, qui reste tracé</li>
+          <li>Marque le départ puis l'arrivée ; la mission a une date d'expiration</li>
+        </ul>
+      </article>
+
+      <article class="role-card md:col-span-2 lg:col-span-1" data-stagger>
+        <div class="flex items-start justify-between gap-3">
+          <div class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18M5 18v-4h14v4M9 14V9h6v5M12 9V5"/></svg></div>
+          <span class="app-badge">TraceLot · BioStock</span>
+        </div>
+        <div>
+          <p class="mono text-[11px] tracking-[.14em] uppercase text-slate">Poste 3 · Pont-bascule de Divo</p>
+          <h3 class="h-card mt-1.5">Agent de réception</h3>
+        </div>
+        <ul class="role-list">
+          <li>Identifie le lot par son tag QR ou par sa référence</li>
+          <li>Refait la pesée : poids, humidité, sacs reçus, photo</li>
+          <li>Affecte le lot au stock : cabosses, coques ou résidus d'hévéa</li>
+          <li>Peut mettre un lot en quarantaine et y ajouter ses notes</li>
+          <li>Travaille sur terminal durci ou sur la saisie rapide de BioStock, reliée à l'indicateur du pont-bascule</li>
+        </ul>
+      </article>
+
+      <article class="role-card md:col-span-2" data-stagger>
+        <div class="flex items-start justify-between gap-3">
+          <div class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4M7 13l3-3 2 2 5-5"/></svg></div>
+          <span class="app-badge">BioStock</span>
+        </div>
+        <div>
+          <p class="mono text-[11px] tracking-[.14em] uppercase text-slate">Poste 4 · Usine</p>
+          <h3 class="h-card mt-1.5">Superviseur et gestionnaire de stock</h3>
+          <p class="mt-2 text-[15px] text-slate max-w-[60ch]">L'arbitre humain entre les alertes automatiques et leurs conséquences. Lui seul sort un lot de quarantaine, en le validant ou en le refusant, avec une note.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-2.5">
+          <div class="screen-chip"><div><b>Tableau de bord</b><span>Lots, tonnage, matière sèche, alertes, quarantaines, courbe sur 7 jours</span></div></div>
+          <div class="screen-chip"><div><b>Réconciliation matière</b><span>Départ et arrivée par lot, tendances par village, collecteur ou camion</span></div></div>
+          <div class="screen-chip"><div><b>Quarantaine</b><span>Valider ou refuser chaque lot suspect, avec une note obligatoire</span></div></div>
+          <div class="screen-chip"><div><b>Agents, producteurs, coopératives</b><span>Comptes, PIN, blocages motivés, fusion des doublons</span></div></div>
+          <div class="screen-chip"><div><b>Export ESG</b><span>Lots, verdicts et empreintes pour les audits et crédits carbone</span></div></div>
+          <div class="screen-chip"><div><b>Alertes en temps réel</b><span>Bandeau sur le tableau de bord et notification Telegram anonymisée</span></div></div>
+        </div>
+        <p class="text-[14px] text-slate border-t border-[#E2E8F0] pt-4"><b class="text-ink">Ce qu'il ne fait pas :</b> aucune saisie terrain, aucune action automatique sur la chaudière.</p>
+      </article>
+
+      <article class="role-card" data-stagger>
+        <div class="flex items-start justify-between gap-3">
+          <div class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <span class="app-badge">BioStock</span>
+        </div>
+        <div>
+          <p class="mono text-[11px] tracking-[.14em] uppercase text-slate">Poste 5 · Direction</p>
+          <h3 class="h-card mt-1.5">Rôle Suprême</h3>
+        </div>
+        <ul class="role-list">
+          <li>Consulte le registre d'audit complet : qui, quoi, quand, sur quel appareil</li>
+          <li>Exporte ce registre en CSV</li>
+          <li>Seul habilité aux suppressions, toujours logiques et motivées</li>
+          <li>Gère la corbeille et peut restaurer ce qui a été supprimé</li>
+        </ul>
+        <p class="mt-auto text-[14px] font-semibold text-forest">Rien n'est jamais détruit physiquement.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DÉTECTION ============ -->
+<section class="band" id="detection" aria-labelledby="detection-title">
+  <div class="wrap">
+    <div class="grid lg:grid-cols-12 gap-8 items-end">
+      <div class="lg:col-span-7">
+        <p class="tag" data-reveal>La détection de fraude</p>
+        <h2 id="detection-title" class="h-sec mt-6" data-reveal>On compare la matière sèche, pas le poids brut.</h2>
+      </div>
+      <p class="lead lg:col-span-5" data-reveal>Un sac mouillé pèse plus lourd mais ne brûle pas mieux. Le serveur compare ce qui a été déclaré au village avec ce qui arrive à l'usine, en ne retenant que la matière qui a une vraie valeur énergétique.</p>
+    </div>
+
+    <div class="demo-shell mt-14" id="verdict-demo" data-reveal>
+      <div class="flex flex-wrap items-center justify-between gap-4 px-5 sm:px-7 py-5 border-b border-rim">
+        <p class="mono text-[11.5px] tracking-[.12em] uppercase text-mist">Simulation · LOT-2026-000184</p>
+        <div class="flex flex-wrap gap-2" role="group" aria-label="Choisir un scénario">
+          <button type="button" class="scenario-btn" data-scenario="conforme" aria-pressed="false">Conforme</button>
+          <button type="button" class="scenario-btn" data-scenario="humidite" aria-pressed="false">Mouillage</button>
+          <button type="button" class="scenario-btn" data-scenario="masse" aria-pressed="false">Vol de sacs</button>
+          <button type="button" class="scenario-btn" data-scenario="balance" aria-pressed="false">Balance</button>
+          <button type="button" class="scenario-btn" data-scenario="combinee" aria-pressed="true">Mouillage + vol</button>
+        </div>
+      </div>
+
+      <div class="grid lg:grid-cols-[minmax(0,1.15fr)_minmax(0,.85fr)]">
+        <div class="p-5 sm:p-7 grid gap-7 min-w-0">
+          <div>
+            <div class="flex items-baseline justify-between gap-3 text-[14px]"><b class="font-display">Au village · départ</b><span class="mono num text-mist" id="w-dep">Poids brut 2,48 t</span></div>
+            <div class="bar mt-2.5"><div class="dry" id="dep-dry" style="width:74.5%"></div><div class="water" id="dep-water" style="width:16.4%"></div></div>
+          </div>
+          <div>
+            <div class="flex items-baseline justify-between gap-3 text-[14px]"><b class="font-display">À l'usine · arrivée</b><span class="mono num text-mist" id="w-arr">Poids brut 2,58 t</span></div>
+            <div class="bar mt-2.5"><div class="dry" id="arr-dry" style="width:63.6%"></div><div class="water" id="arr-water" style="width:30.9%"></div></div>
+          </div>
+          <div class="flex flex-wrap gap-5 text-[13px] text-mist">
+            <span class="flex items-center gap-2"><i class="w-3 h-3 rounded-sm bg-emerald"></i>Matière sèche, payée et brûlée</span>
+            <span class="flex items-center gap-2"><i class="w-3 h-3 rounded-sm bg-signal"></i>Eau, ni payée ni utile</span>
+          </div>
+          <div class="rounded-2xl bg-[#0C1B2A] border border-rim p-4 relative overflow-hidden h-[120px]" aria-hidden="true">
+            <svg viewBox="0 0 520 100" class="w-full h-full" id="truck-load" preserveAspectRatio="xMidYMax meet">
+              <rect x="0" y="92" width="520" height="8" fill="#C8643B" opacity=".5"/>
+              <g id="load-sacks"></g>
+              <g id="load-drops" fill="#3B82F6"></g>
+            </svg>
+          </div>
+        </div>
+
+        <div class="p-5 sm:p-7 border-t lg:border-t-0 lg:border-l border-rim flex flex-col items-center text-center gap-3 min-w-0">
+          <svg viewBox="0 0 240 140" class="w-full max-w-[300px]" aria-hidden="true">
+            <path d="M20 120 A100 100 0 0 1 70 33.4" fill="none" stroke="#10B981" stroke-width="18"/>
+            <path d="M72 32.2 A100 100 0 0 1 168 32.2" fill="none" stroke="#F59E0B" stroke-width="18"/>
+            <path d="M170 33.4 A100 100 0 0 1 220 120" fill="none" stroke="#DC2626" stroke-width="18"/>
+            <g class="gauge-needle" id="gauge-needle" style="transform:rotate(70deg)">
+              <path d="M120 120 L116 116 L120 34 L124 116 Z" fill="#E8EEF3"/>
+            </g>
+            <circle cx="120" cy="120" r="9" fill="#E8EEF3"/><circle cx="120" cy="120" r="4" fill="#132638"/>
+          </svg>
+          <p class="mono text-[11px] tracking-[.14em] uppercase text-mist">Verdict du serveur</p>
+          <p class="verdict-code text-[#F87171]" id="verdict-code" aria-live="polite">ALERTE_COMBINEE</p>
+          <p class="text-[15px] text-[#C9D5E1] max-w-[36ch]" id="verdict-text">Le camion pèse plus lourd, mais transporte moins de matière sèche. On aurait payé de l'eau et perdu du combustible.</p>
+          <span class="pill pill-warn mt-1" id="verdict-next">Quarantaine · décision du superviseur</span>
+        </div>
+      </div>
+
+      <div class="border-t border-rim p-5 sm:p-7 grid md:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] gap-6 items-center">
+        <div class="rounded-[14px] bg-paper text-ink overflow-hidden relative min-w-0" id="alert-dash">
+          <div class="flex items-center justify-between px-4 py-3 border-b border-[#E2E8F0]">
+            <span class="flex items-center gap-2"><img src="img/biostock-mark.png" alt="" class="h-5 w-auto"><b class="font-display text-[13px]">Dernières alertes</b></span>
+            <span class="text-[11px] text-slate">BioStock</span>
+          </div>
+          <div class="px-4 py-3 text-[12px] grid gap-2 min-h-[96px] relative">
+            <div class="alert-row flex flex-wrap items-center gap-x-3 gap-y-1 rounded-lg border px-3 py-2.5" id="alert-row">
+              <span class="font-bold" id="alert-title">Alerte rouge</span>
+              <span class="mono">LOT-2026-000184</span>
+              <span class="text-slate" id="alert-desc">Perte de matière sèche et humidité en hausse</span>
+            </div>
+            <div class="flex flex-wrap items-center gap-x-3 gap-y-1 px-3 text-slate"><span class="mono">LOT-2026-000171</span><span>Hiré</span><span class="text-[#B45309] font-semibold mono text-[11px]">ALERTE_HUMIDITE</span></div>
+          </div>
+        </div>
+        <div class="tg-toast flex gap-3 items-start" id="tg-toast">
+          <span class="w-9 h-9 rounded-full grid place-items-center bg-[#2AABEE] shrink-0" aria-hidden="true"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="#fff"><path d="M21.5 4.5L2.9 11.7c-1.3.5-1.2 1.2-.2 1.5l4.8 1.5 1.8 5.6c.2.6.5.7 1 .3l2.6-2.1 5 3.7c.9.5 1.5.2 1.7-.8L22.9 6c.3-1.3-.5-1.9-1.4-1.5zM8.8 14.3l9-5.7-7.3 6.6-.3 3.2z"/></svg></span>
+          <div class="min-w-0">
+            <p class="font-semibold text-white text-[13px]">BioStock · alerte</p>
+            <p class="mt-0.5" id="tg-text">Nouvelle alerte rouge sur un lot du Lôh-Djiboua. Ouvrez le lien sécurisé pour voir le détail.</p>
+            <p class="mt-1 text-[11px] text-[#7F92A6]">Résumé anonymisé · le détail exige une connexion</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-10 overflow-x-auto">
+      <table class="w-full min-w-[620px] text-left text-[14.5px]" data-reveal>
+        <caption class="sr-only">Les cinq verdicts possibles</caption>
+        <thead><tr class="text-mist text-[12px] mono uppercase tracking-[.1em]"><th class="py-3 pr-4 font-medium">Verdict</th><th class="py-3 pr-4 font-medium">Ce qu'il signifie</th><th class="py-3 font-medium">Niveau</th></tr></thead>
+        <tbody class="divide-y divide-rim border-t border-rim">
+          <tr><td class="py-3.5 pr-4 mono font-semibold text-[#34D399]">CONFORME</td><td class="py-3.5 pr-4 text-[#C9D5E1]">L'écart reste dans la tolérance</td><td class="py-3.5"><span class="pill pill-ok">Vert</span></td></tr>
+          <tr><td class="py-3.5 pr-4 mono font-semibold text-[#FBBF24]">ALERTE_HUMIDITE</td><td class="py-3.5 pr-4 text-[#C9D5E1]">Le lot a pris l'eau en route : mouillage suspect</td><td class="py-3.5"><span class="pill pill-warn">Orange</span></td></tr>
+          <tr><td class="py-3.5 pr-4 mono font-semibold text-[#F87171]">ALERTE_MASSE</td><td class="py-3.5 pr-4 text-[#C9D5E1]">De la matière sèche a disparu : vol de sacs suspect</td><td class="py-3.5"><span class="pill pill-bad">Rouge</span></td></tr>
+          <tr><td class="py-3.5 pr-4 mono font-semibold text-[#FBBF24]">ALERTE_BALANCE</td><td class="py-3.5 pr-4 text-[#C9D5E1]">Écart physiquement incohérent : balance à vérifier</td><td class="py-3.5"><span class="pill pill-warn">Orange</span></td></tr>
+          <tr><td class="py-3.5 pr-4 mono font-semibold text-[#F87171]">ALERTE_COMBINEE</td><td class="py-3.5 pr-4 text-[#C9D5E1]">Perte de matière et humidité en hausse</td><td class="py-3.5"><span class="pill pill-bad">Rouge</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="mt-6 text-[14px] text-mist max-w-[70ch]" data-reveal>Le téléphone affiche un aperçu du verdict. Le verdict officiel est calculé par le serveur, puis renvoyé à tous les écrans.</p>
+  </div>
+</section>
+
+<!-- ============ VERROUS ============ -->
+<section class="band band-deep !pt-0 md:!pt-0" aria-labelledby="verrous-title">
+  <div class="wrap">
+    <div class="border-t border-rim pt-[clamp(56px,7vw,96px)] grid lg:grid-cols-12 gap-8">
+      <div class="lg:col-span-4">
+        <p class="tag" data-reveal>Les verrous</p>
+        <h2 id="verrous-title" class="h-sec mt-6 !text-[clamp(28px,3.4vw,40px)]" data-reveal>Six verrous contre la fraude.</h2>
+        <p class="lead mt-5" data-reveal>Une anomalie n'est jamais perdue : la donnée est acceptée, puis signalée dans une colonne dédiée.</p>
+      </div>
+      <div class="lg:col-span-8 grid sm:grid-cols-2 gap-4">
+        <div class="lock-card" data-stagger><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h2M18 14h2v2M14 18v2h6"/></svg>
+          <h3 class="font-display font-bold text-[17px] mt-4">Un tag QR unique par lot</h3><p class="text-[14.5px] text-mist mt-1.5">Un tag ne peut pas être à la fois une carte producteur et un lot.</p></div>
+        <div class="lock-card" data-stagger><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 5v14M7 5v14M10 5v14M14 5v14M16 5v14M20 5v14"/></svg>
+          <h3 class="font-display font-bold text-[17px] mt-4">Un code-barres unique par sac</h3><p class="text-[14.5px] text-mist mt-1.5">Un sac n'appartient qu'à un seul lot, jamais à deux.</p></div>
+        <div class="lock-card" data-stagger><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18M5 18v-4h14v4"/><path d="M12 4v6M9 7l3 3 3-3"/></svg>
+          <h3 class="font-display font-bold text-[17px] mt-4">Une seule réception par lot</h3><p class="text-[14.5px] text-mist mt-1.5">Un lot déjà pesé à Divo ne peut pas l'être une seconde fois.</p></div>
+        <div class="lock-card" data-stagger><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="11" height="11" rx="2"/><rect x="10" y="10" width="11" height="11" rx="2"/></svg>
+          <h3 class="font-display font-bold text-[17px] mt-4">Anti-doublon à trois niveaux</h3><p class="text-[14.5px] text-mist mt-1.5">Session en cours, base de données, journal d'audit. Chaque tentative est enregistrée.</p></div>
+        <div class="lock-card" data-stagger><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+          <h3 class="font-display font-bold text-[17px] mt-4">GPS obligatoire à la pesée</h3><p class="text-[14.5px] text-mist mt-1.5">Avec un indice de précision. Une position nulle n'est jamais enregistrée.</p></div>
+        <div class="lock-card" data-stagger><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v18M5 4h12l-2 4 2 4H5"/></svg>
+          <h3 class="font-display font-bold text-[17px] mt-4">Anomalies signalées</h3><p class="text-[14.5px] text-mist mt-1.5">Pesée manquante, producteur bloqué, camion en surcharge : tout est gardé et marqué.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HORS-LIGNE ============ -->
+<section class="band band-light" id="hors-ligne" aria-labelledby="offline-title">
+  <div class="wrap grid lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-5">
+      <p class="tag" data-reveal>Hors-ligne d'abord</p>
+      <h2 id="offline-title" class="h-sec mt-6" data-reveal>Zone blanche ? Le travail continue.</h2>
+      <p class="lead mt-6" data-reveal>Beaucoup de villages n'ont pas de réseau. TraceLot n'attend jamais le signal pour enregistrer une pesée.</p>
+      <ul class="check-list mt-8 text-[15.5px] text-[#334155]">
+        <li data-stagger><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg><span>Chaque saisie est sauvegardée sur le téléphone à l'instant même.</span></li>
+        <li data-stagger><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg><span>Une file d'attente garde toutes les opérations à transmettre.</span></li>
+        <li data-stagger><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg><span>Dès que le réseau revient, l'envoi part tout seul, par paquets et dans l'ordre, avec de nouveaux essais en cas d'échec.</span></li>
+        <li data-stagger><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg><span>Un bouton « Forcer la synchronisation » reste toujours disponible.</span></li>
+        <li data-stagger><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg><span>Si le serveur tombe, TraceLot continue et transmet tout au retour.</span></li>
+      </ul>
+    </div>
+
+    <div class="lg:col-span-7 sync-shell" id="sync-demo" data-reveal>
+      <div class="flex flex-wrap items-center justify-between gap-3">
+        <div class="flex items-center gap-3">
+          <span class="net-dot" id="net-dot"></span>
+          <b class="font-display text-[16px]" id="net-label">Mode avion · hors réseau</b>
+        </div>
+        <button type="button" class="text-[13px] font-semibold text-forest border border-[#CFE3D6] rounded-lg px-3 py-1.5 hover:bg-[#ECFDF5]" id="sync-replay">Rejouer le test</button>
+      </div>
+      <p class="mt-2 text-[13.5px] text-slate">Test terrain : 15 pesées saisies en mode avion, puis réseau rétabli.</p>
+
+      <div class="mt-6 grid sm:grid-cols-[minmax(0,1fr)_170px] gap-4 items-stretch">
+        <div class="rounded-2xl bg-paper p-4 min-w-0">
+          <div class="flex justify-between items-baseline text-[13px]"><span class="font-semibold">TraceLot · file d'attente</span><span class="mono num text-slate"><span id="q-count">15</span> en attente</span></div>
+          <div class="queue mt-3" id="queue"></div>
+        </div>
+        <div class="server-box" id="server-box">
+          <svg viewBox="0 0 24 24" class="w-7 h-7 text-forest shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 7.5h.01M7 16.5h.01"/></svg>
+          <div class="text-[13px] leading-snug"><b class="block font-display">Serveur</b><span class="num" id="srv-count">0</span> reçues<br><span class="text-slate" id="srv-batch">en attente du réseau</span></div>
+        </div>
+      </div>
+
+      <div class="mt-5 grid grid-cols-3 gap-3 text-center">
+        <div class="rounded-xl border border-[#E2E8F0] py-3"><p class="font-display font-extrabold text-[24px] num" id="r-sync">0</p><p class="text-[12px] text-slate">synchronisées</p></div>
+        <div class="rounded-xl border border-[#E2E8F0] py-3"><p class="font-display font-extrabold text-[24px] num text-forest">0</p><p class="text-[12px] text-slate">doublon</p></div>
+        <div class="rounded-xl border border-[#E2E8F0] py-3"><p class="font-display font-extrabold text-[24px] num text-forest">0</p><p class="text-[12px] text-slate">perte</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SÉCURITÉ ============ -->
+<section class="band" id="securite" aria-labelledby="securite-title">
+  <div class="wrap">
+    <div class="grid lg:grid-cols-12 gap-8 items-end">
+      <div class="lg:col-span-7">
+        <p class="tag" data-reveal>Sécurité, audit et blockchain</p>
+        <h2 id="securite-title" class="h-sec mt-6" data-reveal>Un historique que personne ne peut réécrire.</h2>
+      </div>
+      <p class="lead lg:col-span-5" data-reveal>Chaque changement est journalisé : qui, quand, sur quel appareil, avant et après. Le registre refuse toute modification et toute suppression.</p>
+    </div>
+
+    <div class="mt-14 grid lg:grid-cols-[minmax(0,1.25fr)_minmax(0,1fr)] gap-6">
+      <div class="ledger" id="ledger" data-reveal role="table" aria-label="Extrait du registre d'audit">
+        <div class="ledger-row ledger-head" role="row"><span role="columnheader">Heure</span><span role="columnheader">Événement</span><span class="dev" role="columnheader">Appareil</span><span></span></div>
+        <div class="ledger-row" role="row"><span class="num text-mist">08:14:02</span><span>Lot créé · agent K. Yao</span><span class="dev text-mist">TL-A52-07</span><svg class="lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+        <div class="ledger-row" role="row"><span class="num text-mist">09:47:31</span><span>Mission MSN-0412 · départ</span><span class="dev text-mist">TL-A52-11</span><svg class="lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+        <div class="ledger-row" role="row"><span class="num text-mist">13:05:12</span><span>Réception · pesée à l'arrivée</span><span class="dev text-mist">BS-PONT-01</span><svg class="lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+        <div class="ledger-row" role="row"><span class="num text-mist">13:05:14</span><span>Verdict serveur · CONFORME</span><span class="dev text-mist">API</span><svg class="lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+        <div class="ledger-row denied" role="row"><span class="num">13:21:40</span><span>Tentative de modification de l'historique · refusée</span><span class="dev">inconnu</span><svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></div>
+      </div>
+
+      <div class="rounded-[16px] border border-rim bg-panel p-6 flex flex-col gap-4 min-w-0" data-reveal>
+        <div class="flex items-center justify-between gap-3 flex-wrap">
+          <span class="mono text-[12px] text-mist">LOT-2026-000184</span>
+          <span class="pill pill-ok">Reçu validé</span>
+        </div>
+        <p class="font-display font-bold text-[18px]">Empreinte SHA-256 posée automatiquement</p>
+        <p class="hash-box" id="hash-box">5c0e9a1f7d3b28e46a0c91f2b7d54e83a6f1c0d92e7b4a5813fc60d29b8e7a41</p>
+        <div class="flex items-center gap-3 text-[13px] text-mist border-t border-rim pt-4">
+          <span class="chip !border-dashed">V2 · ancrage Hedera</span>
+          <span>pour les crédits carbone et la certification ESG</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="lock-card" data-stagger><h3 class="font-display font-bold text-[16px]">Suppression logique seulement</h3><p class="text-[14px] text-mist mt-1.5">Aucune donnée n'est détruite. La corbeille permet de restaurer, et seul le Rôle Suprême y a accès.</p></div>
+      <div class="lock-card" data-stagger><h3 class="font-display font-bold text-[16px]">Deux modes de connexion</h3><p class="text-[14px] text-mist mt-1.5">Téléphone et PIN sur le terrain, e-mail et mot de passe pour la supervision.</p></div>
+      <div class="lock-card" data-stagger><h3 class="font-display font-bold text-[16px]">Accès coupé immédiatement</h3><p class="text-[14px] text-mist mt-1.5">Jetons de 30 jours renouvelables. Un compte désactivé perd tout accès. Verrouillage après plusieurs échecs.</p></div>
+      <div class="lock-card" data-stagger><h3 class="font-display font-bold text-[16px]">Alertes confidentielles</h3><p class="text-[14px] text-mist mt-1.5">Les notifications Telegram ne portent qu'un résumé anonymisé et un lien sécurisé.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ARCHITECTURE ============ -->
+<section class="band band-deep" id="architecture" aria-labelledby="archi-title">
+  <div class="wrap">
+    <div class="grid lg:grid-cols-12 gap-8 items-end">
+      <div class="lg:col-span-7">
+        <p class="tag" data-reveal>Sous le capot</p>
+        <h2 id="archi-title" class="h-sec mt-6" data-reveal>Trois couches, du champ à la chaudière.</h2>
+      </div>
+      <p class="lead lg:col-span-5" data-reveal>Les deux premières sont conçues et développées. La troisième est la vision du projet : une intelligence qui conseille, sans jamais piloter.</p>
+    </div>
+
+    <div class="mt-14 grid lg:grid-cols-3 gap-4 relative">
+      <div class="layer" data-stagger>
+        <p class="mono text-[11px] tracking-[.14em] uppercase text-emerald">Couche 1</p>
+        <h3 class="h-card mt-2">Collecte terrain</h3>
+        <p class="text-[14.5px] text-mist mt-2">TraceLot sur Android : base locale SQLite et file de synchronisation, scan QR et code-barres, photo, GPS.</p>
+        <div class="flex flex-wrap gap-2 mt-5"><span class="chip">Flutter</span><span class="chip">SQLite</span><span class="chip">Android</span></div>
+      </div>
+      <div class="layer" data-stagger>
+        <p class="mono text-[11px] tracking-[.14em] uppercase text-emerald">Couche 2</p>
+        <h3 class="h-card mt-2">Traçabilité et réconciliation</h3>
+        <p class="text-[14.5px] text-mist mt-2">Une API unique documentée, une base géographique, une synchronisation par lots sans doublon et un flux d'événements en temps réel vers BioStock.</p>
+        <div class="flex flex-wrap gap-2 mt-5"><span class="chip">Node.js · Fastify</span><span class="chip">TypeScript</span><span class="chip">PostgreSQL + PostGIS</span><span class="chip">SSE</span><span class="chip">OpenAPI</span><span class="chip">Flutter web</span></div>
+      </div>
+      <div class="layer vision" data-stagger>
+        <div class="flex items-center justify-between gap-3"><p class="mono text-[11px] tracking-[.14em] uppercase text-[#F0A27F]">Couche 3 · vision</p><span class="chip !text-[11px]">ThermIA</span></div>
+        <h3 class="h-card mt-2">Intelligence thermodynamique</h3>
+        <p class="text-[14.5px] text-mist mt-2">Préparer le combustible (broyage, séchage par chaleur fatale) et distinguer une anomalie de combustible d'une panne mécanique. Lecture seule des capteurs : chaque recommandation est validée par un opérateur.</p>
+        <div class="flex flex-wrap gap-2 mt-5"><span class="chip">Modbus TCP</span><span class="chip">OPC UA</span><span class="chip">lecture seule</span></div>
+      </div>
+    </div>
+
+    <div class="mt-4 rounded-[18px] border border-rim p-6 grid md:grid-cols-[auto_1fr] gap-x-8 gap-y-4 items-center" data-reveal>
+      <p class="mono text-[11px] tracking-[.14em] uppercase text-mist">Intégrations</p>
+      <div class="flex flex-wrap gap-2"><span class="chip">Supabase</span><span class="chip">Hedera</span><span class="chip">Telegram</span><span class="chip">Firebase FCM</span><span class="chip">Passerelle industrielle</span></div>
+    </div>
+    <p class="mt-5 text-[14px] text-mist" data-reveal>Le système ne commande jamais l'automate de la chaudière.</p>
+  </div>
+</section>
+
+<!-- ============ FEUILLE DE ROUTE ============ -->
+<section class="band band-light" id="feuille-de-route" aria-labelledby="roadmap-title">
+  <div class="wrap">
+    <div class="grid lg:grid-cols-12 gap-8 items-end">
+      <div class="lg:col-span-7">
+        <p class="tag" data-reveal>Feuille de route</p>
+        <h2 id="roadmap-title" class="h-sec mt-6" data-reveal>Du prototype à la mise en service.</h2>
+      </div>
+      <p class="lead lg:col-span-5" data-reveal>Le système est dimensionné pour environ 100 lots par jour et des pics de 200 opérations de synchronisation.</p>
+    </div>
+
+    <div class="road mt-16" id="road">
+      <div class="road-line" aria-hidden="true"></div>
+      <div class="road-progress" id="road-progress" aria-hidden="true"></div>
+      <ol class="grid md:grid-cols-3 gap-10 md:gap-8 relative">
+        <li data-stagger>
+          <div class="flex items-center gap-4"><span class="phase-dot now">1</span></div>
+          <p class="mt-6 flex flex-wrap items-center gap-3"><span class="mono text-[12px] tracking-[.12em] uppercase text-laterite">Q4 2026</span><span class="pill pill-warn">En cours · octobre 2026</span></p>
+          <h3 class="h-card mt-1.5">Phase 1 · MVP</h3>
+          <p class="text-[15px] text-slate mt-2">Prototype fonctionnel, moteur de comparaison validé, tests d'intégration de l'API.</p>
+        </li>
+        <li data-stagger>
+          <div class="flex items-center gap-4"><span class="phase-dot">2</span></div>
+          <p class="mono text-[12px] tracking-[.12em] uppercase text-slate mt-6">T1 – T2 2027</p>
+          <h3 class="h-card mt-1.5">Phase 2 · Pilote</h3>
+          <p class="text-[15px] text-slate mt-2">Simulation des flux de données et configuration du serveur de l'usine.</p>
+        </li>
+        <li data-stagger>
+          <div class="flex items-center gap-4"><span class="phase-dot">3</span></div>
+          <p class="mono text-[12px] tracking-[.12em] uppercase text-slate mt-6">Juillet 2027</p>
+          <h3 class="h-card mt-1.5">Phase 3 · Déploiement</h3>
+          <p class="text-[15px] text-slate mt-2">Objectif : mise en service opérationnelle sur le cas d'application de Divo, formation des équipes et recette finale.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AUTEUR ============ -->
+<section class="band" id="auteur" aria-labelledby="auteur-title">
+  <div class="wrap grid lg:grid-cols-12 gap-10 items-center">
+    <div class="lg:col-span-4" data-reveal>
+      <div class="aspect-square max-w-[320px] rounded-[28px] relative overflow-hidden border border-rim" style="background:radial-gradient(90% 80% at 30% 20%, rgba(16,185,129,.28), transparent 60%), radial-gradient(80% 80% at 90% 100%, rgba(200,100,59,.3), transparent 60%), #0F1E2E">
+        <span class="absolute inset-0 grid place-items-center font-display font-extrabold text-[120px] tracking-[-0.06em] text-white/90">YS</span>
+        <span class="absolute left-5 bottom-5 mono text-[11px] tracking-[.14em] uppercase text-mist">Concepteur · développeur</span>
+      </div>
+    </div>
+    <div class="lg:col-span-8">
+      <p class="tag" data-reveal>Conçu et développé par</p>
+      <h2 id="auteur-title" class="h-sec mt-6" data-reveal>YRIGALE Kouyo Saint Michel</h2>
+      <p class="lead mt-5 !text-[#B9C6D3]" data-reveal>Ingénieur en intelligence artificielle appliquée à l'industrie et en génie logiciel. TraceLot &amp; BioStock est son projet de fin d'études, en Master Intelligence artificielle appliquée à l'industrie à Samara Polytech : architecture, application mobile, backend et plateforme de supervision, de bout en bout.</p>
+      <div class="flex flex-wrap gap-2 mt-7" data-reveal>
+        <span class="chip">Flutter</span><span class="chip">Fastify</span><span class="chip">TypeScript</span><span class="chip">PostgreSQL / PostGIS</span><span class="chip">Supabase</span><span class="chip">Hedera</span><span class="chip">Telegram / FCM</span><span class="chip">Modbus / OPC UA</span>
+      </div>
+      <div class="mt-8" data-reveal>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/saint-michel-yirigale-945570328" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"/></svg>
+          Voir son profil LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="band" id="contact" aria-labelledby="contact-title" style="background:radial-gradient(70% 90% at 100% 0%, rgba(16,185,129,.22), transparent 60%), linear-gradient(160deg,#0E3B26 0%,#0B2A22 45%,#07121F 100%)">
+  <div class="wrap grid lg:grid-cols-12 gap-12">
+    <div class="lg:col-span-5">
+      <p class="tag !text-[#A7F3D0]" data-reveal>Prochaine étape</p>
+      <h2 id="contact-title" class="h-sec mt-6" data-reveal>Discutons d'un pilote terrain.</h2>
+      <p class="lead mt-6 !text-[#B6D4C4]" data-reveal>Jury, investisseurs, opérateurs de la filière biomasse : demandez une démonstration de TraceLot et BioStock ou un échange sur un pilote.</p>
+      <div class="mt-9 grid gap-4" data-reveal>
+        <div class="rounded-2xl border border-white/15 p-5 bg-black/10">
+          <p class="mono text-[11px] tracking-[.14em] uppercase text-[#A7F3D0]">WhatsApp</p>
+          <div class="flex items-center justify-between gap-3 mt-1.5 flex-wrap">
+            <p class="font-display font-bold text-[20px] num select-all" id="phone-number">+225 07 48 98 18 79</p>
+            <button type="button" class="text-[13px] font-semibold rounded-lg border border-white/20 px-3 py-1.5 hover:border-emerald" id="copy-phone">Copier</button>
+          </div>
+        </div>
+        <a class="rounded-2xl border border-white/15 p-5 bg-black/10 flex items-center justify-between gap-3 hover:border-emerald transition-colors" href="https://www.linkedin.com/in/saint-michel-yirigale-945570328" target="_blank" rel="noopener">
+          <span><span class="mono text-[11px] tracking-[.14em] uppercase text-[#A7F3D0] block">LinkedIn</span><span class="font-display font-bold text-[17px]">YRIGALE Kouyo Saint Michel</span></span>
+          <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <form class="lg:col-span-7 rounded-[24px] border border-white/12 bg-[rgba(7,18,31,.4)] p-6 sm:p-8 grid sm:grid-cols-2 gap-5 content-start" id="contact-form" data-reveal novalidate>
+      <div class="field"><label for="f-name">Nom</label><input id="f-name" name="name" type="text" autocomplete="name" placeholder="Votre nom" required></div>
+      <div class="field"><label for="f-org">Organisation</label><input id="f-org" name="org" type="text" autocomplete="organization" placeholder="Entreprise, école, fonds…"></div>
+      <div class="field sm:col-span-2"><label for="f-topic">Objet</label>
+        <select id="f-topic" name="topic">
+          <option>Demander une démonstration</option>
+          <option>Discuter d'un pilote terrain</option>
+          <option>Question technique</option>
+          <option>Autre demande</option>
+        </select></div>
+      <div class="field sm:col-span-2"><label for="f-msg">Message</label><textarea id="f-msg" name="message" rows="4" placeholder="Quelques mots sur votre contexte"></textarea></div>
+      <div class="sm:col-span-2 flex flex-wrap items-center gap-4">
+        <a class="btn btn-primary" id="wa-send" href="https://api.whatsapp.com/send/?phone=2250748981879&amp;text=Bonjour%2C%20je%20souhaite%20une%20d%C3%A9monstration%20de%20TraceLot%20%26%20BioStock." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.8-1.1-4.6-4-4.8-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>
+          Envoyer sur WhatsApp</a>
+        <p class="text-[13px] text-[#9DBBAC]">Le message est préparé dans WhatsApp, vous le relisez avant l'envoi.</p>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- ============ PIED DE PAGE ============ -->
+<footer class="bg-night border-t border-rim">
+  <div class="wrap py-12 grid md:grid-cols-12 gap-8">
+    <div class="md:col-span-5 flex items-start gap-4">
+      <img src="img/tlbs-mark.png" alt="" class="w-11 h-11">
+      <div>
+        <p class="font-display font-extrabold text-[17px]">TraceLot <span class="text-mist font-semibold">&amp;</span> <span class="text-emerald">BioStock</span></p>
+        <p class="text-[14px] text-mist mt-1">Solution proposée pour la filière biomasse ivoirienne. Concept conçu et développé par YRIGALE Kouyo Saint Michel.</p>
+      </div>
+    </div>
+    <p class="md:col-span-7 text-[13.5px] leading-relaxed text-[#7F92A6] md:border-l md:border-rim md:pl-8">Projet académique indépendant, réalisé dans le cadre d'un Master Intelligence artificielle appliquée à l'industrie (Samara Polytech). TraceLot &amp; BioStock sont des noms de travail. ECOR Divo / SODEN sont cités à titre de cas d'application, sans affiliation ni partenariat.</p>
+    <p class="md:col-span-12 text-[12.5px] text-[#5B6E82] border-t border-rim pt-6 flex flex-wrap justify-between gap-3"><span>© 2026 YRIGALE Kouyo Saint Michel</span><a href="#accueil" class="hover:text-cloud">Retour en haut ↑</a></p>
+  </div>
+</footer>
+<!--@SCRIPTS-->
